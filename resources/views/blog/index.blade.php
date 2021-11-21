@@ -41,95 +41,41 @@
       <div class="flex flex-wrap w-full mb-20">
         <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
           <h2 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white">Recent Blog Posts</h2>
-          <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+          {{-- <div class="h-1 w-20 bg-indigo-500 rounded">hi there</div> --}}
+          @if (Auth::check())
+          <div class="pt-2  ">
+            <a href="/blog/create" class="text-primary bg-secondary p-2 rounded-md">Add New Post</a>
+          </div>
+          @endif
         </div>
+      
         <p class="lg:w-1/2 w-full leading-relaxed text-gray-400 text-opacity-90">Brief description of the types of content i share Lorem ipsum dolor sit amet consectetur adipisicing elit. Id inventore laboriosam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id inventore laboriosam.</p>
       </div>
       <!-- =====================
            blog listing grid
            ===================== -->
-      <div class="flex flex-wrap -m-4">
-        <div class="xl:w-1/4 md:w-1/2 p-4">
-          <div class="bg-mid bg-opacity-40 p-6 rounded-lg">
-            <img class="h-40 rounded w-full object-cover object-center mb-6" src="assets/img/hero-pattern2.svg" alt="content">
-            <h3 class="tracking-widest text-secondary text-xs font-medium title-font">Design</h3>
-            <h4 class="text-lg text-white font-medium title-font mb-2">Best design tools</h4>
-            <p>Nov 17, 2021 |<span>Hashnode</span></p> 
-            <p class="leading-relaxed text-base mt-2">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-          
-            <div class="flex items-center flex-wrap mt-4">
-                <a href="#" class="text-secondary inline-flex items-center md:mb-2 lg:mb-0">Learn More
-                  <svg class="w-4 h-4 ml-2 " viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M5 12h14"></path>
-                    <path d="M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
-            </div>
-        
-            </div>
-        </div>
-
-        <div class="xl:w-1/4 md:w-1/2 p-4">
-            <div class="bg-mid bg-opacity-40 p-6 rounded-lg">
-              <img class="h-40 rounded w-full object-cover object-center mb-6" src="assets/img/hero-pattern2.svg" alt="content">
-              <h3 class="tracking-widest text-secondary text-xs font-medium title-font">Design</h3>
-              <h4 class="text-lg text-white font-medium title-font mb-2">Best design tools</h4>
-              <p>Nov 17, 2021 |<span>Hashnode</span></p> 
-              <p class="leading-relaxed text-base mt-2">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-            
-              <div class="flex items-center flex-wrap mt-4">
-                  <a href="#" class="text-secondary inline-flex items-center md:mb-2 lg:mb-0">Learn More
-                    <svg class="w-4 h-4 ml-2 " viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M5 12h14"></path>
-                      <path d="M12 5l7 7-7 7"></path>
-                    </svg>
-                  </a>
-              </div>
-          
-              </div>
-          </div>
-          
-          <div class="xl:w-1/4 md:w-1/2 p-4">
-            <div class="bg-mid bg-opacity-40 p-6 rounded-lg">
-              <img class="h-40 rounded w-full object-cover object-center mb-6" src="assets/img/hero-pattern2.svg" alt="content">
-              <h3 class="tracking-widest text-secondary text-xs font-medium title-font">Design</h3>
-              <h4 class="text-lg text-white font-medium title-font mb-2">Best design tools</h4>
-              <p>Nov 17, 2021 |<span>Hashnode</span></p> 
-              <p class="leading-relaxed text-base mt-2">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-            
-              <div class="flex items-center flex-wrap mt-4">
-                  <a href="#" class="text-secondary inline-flex items-center md:mb-2 lg:mb-0">Learn More
-                    <svg class="w-4 h-4 ml-2 " viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M5 12h14"></path>
-                      <path d="M12 5l7 7-7 7"></path>
-                    </svg>
-                  </a>
-              </div>
-          
-              </div>
-          </div>
-
-          <div class="xl:w-1/4 md:w-1/2 p-4">
-              <div class="bg-mid bg-opacity-40 p-6 rounded-lg">
-                <img class="h-40 rounded w-full object-cover object-center mb-6" src="assets/img/hero-pattern2.svg" alt="content  https://dummyimage.com/720x400">
-                <h3 class="tracking-widest text-secondary text-xs font-medium title-font">Design</h3>
-                <h4 class="text-lg text-white font-medium title-font mb-2">Best design tools</h4>
-                <p>Nov 17, 2021 |<span>Hashnode</span></p> 
-                <p class="leading-relaxed text-base mt-2">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-              
-                <div class="flex items-center flex-wrap mt-4">
-                    <a href="#" class="text-secondary inline-flex items-center md:mb-2 lg:mb-0">Learn More
-                      <svg class="w-4 h-4 ml-2 " viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M5 12h14"></path>
-                        <path d="M12 5l7 7-7 7"></path>
-                      </svg>
-                    </a>
-                </div>
-            
+      <div class="flex flex-wrap -m-4 ">
+         
+          @foreach ($posts as $post)
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+                <div class="bg-mid bg-opacity-40 p-6 rounded-lg">
+                    <img class="h-40 rounded w-full object-cover object-center mb-6" src="assets/img/hero-pattern2.svg" alt="content">
+                    <h3 class="tracking-widest text-secondary text-xs font-medium title-font">Design</h3>
+                    <h4 class="text-lg text-white font-medium title-font mb-2">{{$post->title}}</h4>
+                    <p>By {{$post->user->name}} created on <span>{{date('jS M Y', strtotime($post->updated_at))}}</span></p> 
+                    <p class="leading-relaxed text-base mt-2">{{$post->description}}</p>
+                    
+                    <div class="flex items-center flex-wrap mt-4">
+                        <a href="/blog/{{$post->slug}}" class="text-secondary inline-flex items-center md:mb-2 lg:mb-0">Keep Reading
+                            <svg class="w-4 h-4 ml-2 " viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14"></path>
+                            <path d="M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
-
-      </div>
+          @endforeach
     </div>
   </section> 
   <!-- cta -->
