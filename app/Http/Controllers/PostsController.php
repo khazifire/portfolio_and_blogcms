@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\models\Post;
+use Cviebrock\EloquentSluggable\Services\SlugService;
 
 class PostsController extends Controller
 {
@@ -24,7 +25,7 @@ class PostsController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create(){
-        //
+        return view('blog.create');
     }
 
     /**
@@ -33,9 +34,25 @@ class PostsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
-        //
+    public function store(Request $request){
+        $request->validate([
+            'title'=> 'required',
+            'description'=> 'required',
+            'image'=> 'required|mimes:png,jpg,jpeg|max:5048'
+        ]);
+        $new_image_name= uniqid(). '-' . $request->title. '.' . $request->image->extension();
+
+        $request->image->move(public_path('images'),$new_image_name);
+
+        Post::create([
+            'title'=> $request->input('title'),
+            'description'=> $request->input('description'),
+            'slug'=> SlugService::createSlug(Post::class, 'slug', $request->title),
+            'image_path' =>$new_image_name,
+            'user_id'=> auth()->user()->id,
+        ]);
+
+        return redirect('/blog')->with('message', 'new blog post has been created');
     }
 
     /**

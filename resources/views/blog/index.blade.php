@@ -1,5 +1,12 @@
  @extends('layouts.app')
  @section('content')
+
+@if (session()->has('message'))
+    <div class="py-10"> 
+        <p class="text-secondary">{{session()->get('message')}}</p>
+    </div>
+@endif
+
  <!--blog header -->
     <!--TODO fix the padding on the left so it can match the nav bar -->
     <section class="bg-other  sm:pl-6 md:pl-18 lg:pl-24">
