@@ -47,7 +47,7 @@
             </div>
         </header>
 
-        <div>
+        <div class="bg-primary">
             @yield('content')
         </div>
 

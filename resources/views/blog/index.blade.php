@@ -61,7 +61,7 @@
                 <div class="bg-mid bg-opacity-40 p-6 rounded-lg">
                     <img class="h-40 rounded w-full object-cover object-center mb-6" src="assets/img/hero-pattern2.svg" alt="content">
                     <h3 class="tracking-widest text-secondary text-xs font-medium title-font">Design</h3>
-                    <h4 class="text-lg text-white font-medium title-font mb-2">{{$post->title}}</h4>
+                    <h4 class="text-lg text-white font-medium title-font mb-2 mt-2">{{$post->title}}</h4>
                     <p>By {{$post->user->name}} created on <span>{{date('jS M Y', strtotime($post->updated_at))}}</span></p> 
                     <p class="leading-relaxed text-base mt-2">{{$post->description}}</p>
                     
