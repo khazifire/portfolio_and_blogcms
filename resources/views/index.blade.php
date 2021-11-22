@@ -43,7 +43,7 @@ About me section
 <div class="sm:flex flex-wrap  items-center  gap-8   ">
 
 <div class="w-full  sm:w-1/2 md:w-1/2 lg:w-2/5 mt-6">
-<img class=" rounded-md  " src="assets/img/dan-profile.png" alt="khazifire picture" >
+<img class=" rounded-md" src="images/dan-profile.png" alt="khazifire picture" >
 <div class="bg-primary h-1 w-2/3 mx-auto"></div>
 </div>
 
