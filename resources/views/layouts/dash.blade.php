@@ -80,7 +80,15 @@
                 </div>
             @endif
           <h2 class="text-xl text-other font-bold mb-2">
-            {{ Request::is('blog/create') ? 'Creating New post' : 'Recent Post' }}
+          {{--   {{ Request::is('blog/create') ? 'Creating New post' : Request::is('home/') ? 'Recent Post' : 'Updating Post' }} --}}
+
+            @if (Request::is('blog/create') )
+                Creating New post
+            @elseif (Request::is('home'))
+                Recent Post
+            @else
+                Updating Post
+            @endif
         </h2>
             <div class="absolute inset-x-0 px-6 py-3 mx-5 mt-4 overflow-y-auto bg-other border border-gray-300 rounded-md max-h-screen">
                 @yield('content')
