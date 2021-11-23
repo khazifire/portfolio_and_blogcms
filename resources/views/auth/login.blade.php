@@ -4,7 +4,7 @@
 <main class="sm:container sm:mx-auto sm:max-w-lg ">
     <div class="flex">
         <div class="w-full">
-            <section class="flex flex-col break-words b sm:border-1 sm:rounded-md  sm:shadow-lg">
+            <section class="flex flex-col break-words  sm:border-1 sm:rounded-md  sm:shadow-lg">
 
                 <header class="font-bold text-other text-center text-3xl py-5 px-6 sm:py-6 sm:px-8 ">
                     {{ __('Login') }}
@@ -53,7 +53,7 @@
                         </label>
 
                         @if (Route::has('password.request'))
-                        <a class="text-sm text-blue-500 hover:text-blue-700 whitespace-no-wrap no-underline hover:underline ml-auto"
+                        <a class="text-sm text-other hover:text-blue-700 whitespace-no-wrap no-underline hover:underline ml-auto"
                             href="{{ route('password.request') }}">
                             {{ __('Forgot Your Password?') }}
                         </a>

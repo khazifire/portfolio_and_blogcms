@@ -54,27 +54,27 @@
            blog listing grid
            ===================== -->
       <div class="flex flex-wrap -m-4 ">
-         
-          @foreach ($posts as $post)
-            <div class="xl:w-1/4 md:w-1/2 p-4">
-                <div class="bg-mid bg-opacity-40 p-6 rounded-lg">
-                    <img class="h-40 rounded w-full object-cover object-center mb-6" src="assets/img/hero-pattern2.svg" alt="content">
-                    <h3 class="tracking-widest text-secondary text-xs font-medium title-font">Design</h3>
-                    <h4 class="text-lg text-white font-medium title-font mb-2 mt-2">{{$post->title}}</h4>
-                    <p>By {{$post->user->name}} created on <span>{{date('jS M Y', strtotime($post->updated_at))}}</span></p> 
-                    <p class="leading-relaxed text-base mt-2">{{$post->description}}</p>
-                    
-                    <div class="flex items-center flex-wrap mt-4">
-                        <a href="/blog/{{$post->slug}}" class="text-secondary inline-flex items-center md:mb-2 lg:mb-0">Keep Reading
-                            <svg class="w-4 h-4 ml-2 " viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M5 12h14"></path>
-                            <path d="M12 5l7 7-7 7"></path>
-                            </svg>
-                        </a>
+         @foreach ($posts as $post)
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                    <div class="bg-mid bg-opacity-40 p-6 rounded-lg">
+                        <img class="h-40 rounded w-full object-cover object-center mb-6" src="images/{{$post->image_path}}" alt="content">
+                        <h3 class="tracking-widest text-secondary text-xs font-medium title-font">Design</h3>
+                        <h4 class="text-lg text-white font-medium title-font mb-2 mt-2">{{$post->title}}</h4>
+                        <p>By {{$post->user->name}} created on <span>{{date('jS M Y', strtotime($post->updated_at))}}</span></p> 
+                        <p class="leading-relaxed text-base mt-2">{{$post->description}}</p>
+                        
+                        <div class="flex items-center flex-wrap mt-4">
+                            <a href="/blog/{{$post->slug}}" class="text-secondary inline-flex items-center md:mb-2 lg:mb-0">Keep Reading
+                                <svg class="w-4 h-4 ml-2 " viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-          @endforeach
+            @endforeach 
+         
     </div>
   </section> 
   <!-- cta -->
