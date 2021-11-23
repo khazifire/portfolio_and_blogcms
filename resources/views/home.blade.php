@@ -1,6 +1,6 @@
 @extends('layouts.dash')
 @section('content')
-    @empty(!$posts)  
+    @empty($posts)  
     <h4 class="text-lg text-primary font-medium title-font mb-2 mt-2">You did not write anything yet?</h4>
     @else
 
@@ -21,7 +21,7 @@
                     </form>
                 </span>
 
-                <a href="/blog/{{$post->slug}}/delete" class=" inline-flex py-1 px-4 rounded-lg bg-secondary border-2 border-transparent text-primary text-md mr-4 focus:bg-other hover:border-primary">
+                <a href="/blog/{{$post->slug}}/edit" class=" inline-flex py-1 px-4 rounded-lg bg-secondary border-2 border-transparent text-primary text-md mr-4 focus:bg-other hover:border-primary">
                 Edit Post </a>    
             </div>
             @endif

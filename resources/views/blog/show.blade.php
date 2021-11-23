@@ -30,8 +30,8 @@
 </div>
 
 <article class=" container  py-16 mx-auto   ">
-    <div class="mt-2 shadow-inner px-12 py-16 bg-other text-primary leading-8">
-        {{$post->description}}
+    <div class="mt-2 shadow-inner px-12 py-16 bg-other text-primary leading-8 text-md">
+        {!! Parsedown::instance()->text($post->description) !!}
     </div>
     
    
