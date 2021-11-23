@@ -57,7 +57,7 @@
          @foreach ($posts as $post)
                 <div class="xl:w-1/4 md:w-1/2 p-4">
                     <div class="bg-mid bg-opacity-40 p-6 rounded-lg">
-                        <img class="h-40 rounded w-full object-cover object-center mb-6" src="images/{{$post->image_path}}" alt="content">
+                        <img class="h-40 rounded w-full object-cover object-center mb-6" src="{{asset('images/'.$post->image_path)}}" alt="{{$post->title}}">
                         <h3 class="tracking-widest text-secondary text-xs font-medium title-font">Design</h3>
                         <h4 class="text-lg text-white font-medium title-font mb-2 mt-2">{{$post->title}}</h4>
                         <p>By {{$post->user->name}} created on <span>{{date('jS M Y', strtotime($post->updated_at))}}</span></p> 

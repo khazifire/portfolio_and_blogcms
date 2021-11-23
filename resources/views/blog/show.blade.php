@@ -13,7 +13,7 @@
 
         <div class="flex justify-center mt-10">
             <div class="w-full h-64 rounded-xl md:w-4/5">
-                <img class="w-full h-full object-cover rounded-lg" src="https://images.unsplash.com/photo-1508394522741-82ac9c15ba69?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=748&q=80" alt="">
+                <img class="w-full h-full object-cover rounded-lg" src="{{asset('images/'.$post->image_path)}}" alt="{{$post->title}}">
             </div>
         </div>
     </div>
