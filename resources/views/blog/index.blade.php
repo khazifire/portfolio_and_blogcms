@@ -1,11 +1,7 @@
  @extends('layouts.app')
  @section('content')
 
-@if (session()->has('message'))
-    <div class="py-10"> 
-        <p class="text-secondary">{{session()->get('message')}}</p>
-    </div>
-@endif
+
 
  <!--blog header -->
     <!--TODO fix the padding on the left so it can match the nav bar -->
@@ -49,11 +45,7 @@
         <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
           <h2 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white">Recent Blog Posts</h2>
           {{-- <div class="h-1 w-20 bg-indigo-500 rounded">hi there</div> --}}
-          @if (Auth::check())
-          <div class="pt-2  ">
-            <a href="/blog/create" class="text-primary bg-secondary p-2 rounded-md">Add New Post</a>
-          </div>
-          @endif
+        
         </div>
       
         <p class="lg:w-1/2 w-full leading-relaxed text-gray-400 text-opacity-90">Brief description of the types of content i share Lorem ipsum dolor sit amet consectetur adipisicing elit. Id inventore laboriosam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id inventore laboriosam.</p>

@@ -52,7 +52,7 @@ class PostsController extends Controller
             'user_id'=> auth()->user()->id,
         ]);
 
-        return redirect('/blog')->with('message', 'new blog post has been created');
+        return redirect('/home')->with('message', 'new blog post has been created');
     }
 
     /**

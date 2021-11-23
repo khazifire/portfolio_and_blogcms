@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.dash')
  @section('content')
 
 
@@ -15,14 +15,12 @@
 
 @endif
 
-<div class="w-4/5 m-auto  bg-mid px-12 pt-8">
-    <h1 class="text-other text-center text-2xl font-bold">New Blog Post</h1>
-<form action="/blog" method="POST" enctype="multipart/form-data" class="py-10">
-    @csrf
 
-    
+
+<form action="/blog" method="POST" enctype="multipart/form-data" class="">
+    @csrf
         <div >
-            <label class="block text-other text-xl font-bold mb-2" for="description">Title</label>
+            <label class="block text-primary text-xl font-bold mb-2" for="description">Title</label>
             <input 
                 type="text"
                 name="title"
@@ -30,17 +28,17 @@
                 class="shadow appearance-none border rounded w-full py-2 px-3 mb-4 text-primary text-md leading-tight focus:outline-none focus:shadow-outline">
         </div>
 
-        <div class="border-2 rounded-sm border-secondary w-32 p-2 mb-4">
-            <label class=" block text-other text-xl font-bold hover:text-secondary">
-                <span class=" text-base leading-normal">Cover Image</span>
-                <input type="file" name="image" class="hidden">
+        <div class="rounded-sm   mb-4">
+            <label class=" block text-primary text-xl font-bold mb-2 ">
+                Upload Blog header
             </label>
+            <input type="file" name="image" class="text-xl">
             
         </div>
     
 
 
-    <label class="block text-other text-xl font-bold mb-2" for="description">Description</label>
+    <label class="block text-primary text-xl font-bold mb-2" for="description">Description</label>
     <textarea 
         name="description"
         placeholder="what is your topic all about?"
@@ -54,6 +52,6 @@
     </div>
     
 </form>
-</div>
+
 
   @endsection
