@@ -331,12 +331,12 @@ Recent blog post
 <div class=" flex items-center  w-full px-6 py-8 lg:py-16 lg:h-128 lg:w-1/2">
 <div class="max-w-xl">
     <span class="text-secondary font-semibold bg-mid px-2 py-1 rounded-sm">Category</span>
-    <h1 class="my-2 text-2xl font-semibold text-gray-800  lg:text-3xl">Blog title goes here yeyeyye</h1>
-    <span>By Dan on Hashnode | Nov 17, 2021</span> 
-    <p class="mt-6 text-sm text-gray-500  lg:text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis commodi cum cupiditate ducimus, fugit harum id necessitatibus odio quam quasi, quibusdam rem tempora voluptates...</p>
+    <h1 class="my-2 text-2xl font-semibold text-gray-800  lg:text-3xl">{{$post->title}}</h1>
+    <span>By {{$post->user->name}} created on <span>{{date('jS M Y', strtotime($post->updated_at))}}</span> 
+    <p class="mt-6 text-sm text-gray-500  lg:text-base truncate ...">{{$post->description}}</p>
     
     <div class="mt-6 lg:flex-shrink-0">
-        <a href="post.html" class=" inline-flex py-2 px-4 rounded-lg bg-secondary border-2 border-transparent text-primary text-md mr-4 focus:bg-other hover:border-other">
+        <a href="/blog/{{$post->slug}}" class=" inline-flex py-2 px-4 rounded-lg bg-secondary border-2 border-transparent text-primary text-md mr-4 focus:bg-other hover:border-other">
         Read More <span>
             <svg class="pl-1 h-6 w-6" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M5 12h14"></path>

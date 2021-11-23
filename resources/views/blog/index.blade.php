@@ -10,12 +10,12 @@
             <div class=" flex items-center  w-full px-6 py-8 lg:py-32 lg:h-128 lg:w-1/2">
                 <div class="max-w-xl">
                     <span class="text-secondary font-semibold">Category</span>
-                    <h1 class="my-2 text-2xl font-semibold text-gray-800  lg:text-3xl">Blog title goes here yeyeyye</h1>
-                    <span>By Dan on Hashnode | Nov 17, 2021</span> 
-                    <p class="mt-6 text-sm text-gray-500  lg:text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis commodi cum cupiditate ducimus, fugit harum id necessitatibus odio quam quasi, quibusdam rem tempora voluptates...</p>
+                    <h1 class="my-2 text-2xl font-semibold text-gray-800  lg:text-3xl">{{$posts[0]->title}}</h1>
+                    <span>By {{$posts[0]->user->name}} | {{date('jS M Y', strtotime($posts[0]->updated_at))}}</span> 
+                    <p class="mt-6 text-sm text-gray-500  lg:text-base">{{$posts[0]->description}}</p>
                     
                     <div class="mt-6 lg:flex-shrink-0">
-                        <a href="post.html" class=" inline-flex py-2 px-4 rounded-lg bg-secondary  text-primary text-md mr-4  ">
+                        <a href="/blog/{{$posts[0]->slug}}" class=" inline-flex py-2 px-4 rounded-lg bg-secondary  text-primary text-md mr-4  ">
                         Read More <span>
                             <svg class="pl-1 h-6 w-6" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M5 12h14"></path>
@@ -28,7 +28,7 @@
             </div>
             
             <div class="w-full h-64 lg:w-1/2 lg:h-auto">
-                <div class="w-full h-full bg-cover" style="background-image: url(https://images.unsplash.com/photo-1508394522741-82ac9c15ba69?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=748&q=80)">
+                <div class="w-full h-full bg-cover" style="background-image: url('images/{{$posts[0]->image_path}}')">
                     <div class="w-full h-full bg-black opacity-25"></div>
                 </div>
             </div>
@@ -57,11 +57,12 @@
          @foreach ($posts as $post)
                 <div class="xl:w-1/4 md:w-1/2 p-4">
                     <div class="bg-mid bg-opacity-40 p-6 rounded-lg">
+                        
                         <img class="h-40 rounded w-full object-cover object-center mb-6" src="{{asset('images/'.$post->image_path)}}" alt="{{$post->title}}">
                         <h3 class="tracking-widest text-secondary text-xs font-medium title-font">Design</h3>
                         <h4 class="text-lg text-white font-medium title-font mb-2 mt-2">{{$post->title}}</h4>
-                        <p>By {{$post->user->name}} created on <span>{{date('jS M Y', strtotime($post->updated_at))}}</span></p> 
-                        <p class="leading-relaxed text-base mt-2">{{$post->description}}</p>
+                        <p class="text-sm pt-2">By {{$post->user->name}} | <span>{{date('jS M Y', strtotime($post->updated_at))}}</span></p> 
+                        <p class="leading-relaxed text-base mt-2 truncate ...">{{$post->description}}</p>
                         
                         <div class="flex items-center flex-wrap mt-4">
                             <a href="/blog/{{$post->slug}}" class="text-secondary inline-flex items-center md:mb-2 lg:mb-0">Keep Reading
