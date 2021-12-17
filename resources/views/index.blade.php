@@ -50,50 +50,18 @@ About me section
 <div class="w-full sm:w-1/3 md:w-1/3 lg:w-2/4 mt-6  px-4 py-4 ">
 <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold title-font mb-2 text-primary">Hi, i'm Dan</h1> 
 <!--     <p class="lg:w-1/2 w-full text-primary leading-relaxed text-opacity-70 text-xl">About me </p> -->
-<p class="text-2xl sm:text-xl  text-primary pt-8 py-4">
-A web designer based in Thailand Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod optio dolorum, debitis neque,
+<p class="text-2xl sm:text-xl  text-primary pt-8 py-4 leading-7">
+A web designer based in Thailand, and currently a senior student at Asia Pacific Internaitonal Univerity pursing my bachelor degree in Information Tecnology.
 </p>
 
-<div class="flex flex-col gap-3">
-<a href="#" class="text-primary inline-flex items-center"
-  aria-label="Facebook"> 
-  <svg class="w-5 h-5 fill-current mx-2" viewBox="0 0 24 24" fill="none"
-      xmlns="http://www.w3.org/2000/svg">
-      <path
-          d="M2.00195 12.002C2.00312 16.9214 5.58036 21.1101 10.439 21.881V14.892H7.90195V12.002H10.442V9.80204C10.3284 8.75958 10.6845 7.72064 11.4136 6.96698C12.1427 6.21332 13.1693 5.82306 14.215 5.90204C14.9655 5.91417 15.7141 5.98101 16.455 6.10205V8.56104H15.191C14.7558 8.50405 14.3183 8.64777 14.0017 8.95171C13.6851 9.25566 13.5237 9.68693 13.563 10.124V12.002H16.334L15.891 14.893H13.563V21.881C18.8174 21.0506 22.502 16.2518 21.9475 10.9611C21.3929 5.67041 16.7932 1.73997 11.4808 2.01722C6.16831 2.29447 2.0028 6.68235 2.00195 12.002Z">
-      </path>
-  </svg> Twitter
+<div class="flex flex-col gap-3 text-base">
+<a href="https://twitter.com/khazifire" target="_blank" class="text-primary inline-flex items-center hover:text-2xl"> <i class="fa fa-twitter mr-2"></i> Twitter
+</a>
+<a href="https://github.com/khazifire" target="_blank" class="text-primary inline-flex items-center hover:text-2xl"> <i class="fa fa-github mr-2"></i> GitHub
+</a>
+<a href="https://www.instagram.com/khazifire.dev/" target="_blank" class="text-primary inline-flex items-center hover:text-2xl"> <i class="fa fa-instagram mr-2"></i> Instagram
 </a>
 
-<a href="#" class="text-primary inline-flex items-center"
-  aria-label="Facebook"> 
-  <svg class="w-5 h-5 fill-current mx-2" viewBox="0 0 24 24" fill="none"
-      xmlns="http://www.w3.org/2000/svg">
-      <path
-          d="M2.00195 12.002C2.00312 16.9214 5.58036 21.1101 10.439 21.881V14.892H7.90195V12.002H10.442V9.80204C10.3284 8.75958 10.6845 7.72064 11.4136 6.96698C12.1427 6.21332 13.1693 5.82306 14.215 5.90204C14.9655 5.91417 15.7141 5.98101 16.455 6.10205V8.56104H15.191C14.7558 8.50405 14.3183 8.64777 14.0017 8.95171C13.6851 9.25566 13.5237 9.68693 13.563 10.124V12.002H16.334L15.891 14.893H13.563V21.881C18.8174 21.0506 22.502 16.2518 21.9475 10.9611C21.3929 5.67041 16.7932 1.73997 11.4808 2.01722C6.16831 2.29447 2.0028 6.68235 2.00195 12.002Z">
-      </path> 
-  </svg> Twitch
-</a>
-
-<a href="#" class="text-primary inline-flex items-center"
-  aria-label="Facebook"> 
-  <svg class="w-5 h-5 fill-current mx-2" viewBox="0 0 24 24" fill="none"
-      xmlns="http://www.w3.org/2000/svg">
-      <path
-          d="M2.00195 12.002C2.00312 16.9214 5.58036 21.1101 10.439 21.881V14.892H7.90195V12.002H10.442V9.80204C10.3284 8.75958 10.6845 7.72064 11.4136 6.96698C12.1427 6.21332 13.1693 5.82306 14.215 5.90204C14.9655 5.91417 15.7141 5.98101 16.455 6.10205V8.56104H15.191C14.7558 8.50405 14.3183 8.64777 14.0017 8.95171C13.6851 9.25566 13.5237 9.68693 13.563 10.124V12.002H16.334L15.891 14.893H13.563V21.881C18.8174 21.0506 22.502 16.2518 21.9475 10.9611C21.3929 5.67041 16.7932 1.73997 11.4808 2.01722C6.16831 2.29447 2.0028 6.68235 2.00195 12.002Z">
-      </path>
-  </svg> Instagram
-</a>
-
-<a href="#" class="text-primary inline-flex items-center"
-  aria-label="Facebook"> 
-  <svg class="w-5 h-5 fill-current mx-2" viewBox="0 0 24 24" fill="none"
-      xmlns="http://www.w3.org/2000/svg">
-      <path
-          d="M2.00195 12.002C2.00312 16.9214 5.58036 21.1101 10.439 21.881V14.892H7.90195V12.002H10.442V9.80204C10.3284 8.75958 10.6845 7.72064 11.4136 6.96698C12.1427 6.21332 13.1693 5.82306 14.215 5.90204C14.9655 5.91417 15.7141 5.98101 16.455 6.10205V8.56104H15.191C14.7558 8.50405 14.3183 8.64777 14.0017 8.95171C13.6851 9.25566 13.5237 9.68693 13.563 10.124V12.002H16.334L15.891 14.893H13.563V21.881C18.8174 21.0506 22.502 16.2518 21.9475 10.9611C21.3929 5.67041 16.7932 1.73997 11.4808 2.01722C6.16831 2.29447 2.0028 6.68235 2.00195 12.002Z">
-      </path>
-  </svg> Github
-</a>
 
 
 </div>
@@ -188,10 +156,11 @@ Recent Projects
 <div class=" px-5  mx-auto lg:mb-6">
 <div class="flex flex-wrap w-full flex-col items-center text-center">
 <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold title-font mb-2 text-primary">What i do?</h1> 
+  <p>comming soon</p>
 
 </div>
 </div>
-
+{{-- 
 <div class="lg:flex items-center justify-between hidden">
 <p class=" text-primary leading-relaxed text-2xl">Projects</p>
 <p class=" text-secondary leading-relaxed text-2xl"><a href="#" class="hover:text-secondary">View More</a></p>
@@ -233,8 +202,8 @@ Recent Projects
     </svg>
   </a>
 </div>
-</div>
-
+</div> --}}
+{{-- 
 <div class="w-2/3 sm:w-2/4 lg:w-full">
 <img class="object-cover object-center w-full  h-48 mx-auto rounded-lg" src="https://images.unsplash.com/photo-1493863641943-9b68992a8d07?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=739&q=80" alt="avatar"/>
 <div class="mt-2">
@@ -259,7 +228,7 @@ Recent Projects
 <a href="#" class=" inline-flex py-2 px-4 rounded-lg bg-secondary border-2 border-transparent text-primary text-md mr-4 focus:bg-other hover:border-other">
 View More Project 
 </a>
-</div>
+</div> --}}
 
 
 
@@ -281,8 +250,8 @@ Contact me form
 
 
 <div class="text-other font-semibold mt-6">
-<p>[email icon] will_be_added@test.com</p>
-<p>[map icon] Thailand</p>
+<p>itskazimz@gmail.com</p>
+<p class="mt-2">Thailand</p>
 </div>
 
 <div class="text-other mt-8">
@@ -304,7 +273,7 @@ type="email" placeholder="johndoe@gmail.com">
 <div class="mt-8">
 <span class="text-sm text-tertiary font-bold">Message</span>
 <textarea
-class="w-full h-32 bg-other text-tertiary mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" placeholder="what to tell me something, type it here"></textarea>
+class="w-full h-32 bg-other text-tertiary mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" placeholder="want to tell me something? type it here"></textarea>
 </div>
 <div class="mt-8">
 <button
@@ -330,10 +299,10 @@ Recent blog post
 <div class="  lg:flex">
 <div class=" flex items-center  w-full px-6 py-8 lg:py-16 lg:h-128 lg:w-1/2">
 <div class="max-w-xl">
-    <span class="text-secondary font-semibold bg-mid px-2 py-1 rounded-sm">Category</span>
+  {{--   <span class="text-secondary font-semibold bg-mid px-2 py-1 rounded-sm">Category</span> --}}
     <h1 class="my-2 text-2xl font-semibold text-gray-800  lg:text-3xl">{{$post->title}}</h1>
     <span>By {{$post->user->name}} created on <span>{{date('jS M Y', strtotime($post->updated_at))}}</span> 
-    <p class="mt-6 text-sm text-gray-500  lg:text-base truncate ...">{{$post->description}}</p>
+{{--     <p class="mt-6 text-sm text-gray-500  lg:text-base truncate ...">{{$post->description}}</p> --}}
     
     <div class="mt-6 lg:flex-shrink-0">
         <a href="/blog/{{$post->slug}}" class=" inline-flex py-2 px-4 rounded-lg bg-secondary border-2 border-transparent text-primary text-md mr-4 focus:bg-other hover:border-other">
@@ -349,7 +318,7 @@ Recent blog post
 </div>
 
 <div class="w-full h-64 lg:w-1/2 lg:h-auto">
-<div class="w-full h-full bg-cover" style="background-image: url(https://images.unsplash.com/photo-1508394522741-82ac9c15ba69?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=748&q=80)">
+<div class="w-full h-full bg-cover"style="background-image: url('images/{{$post->image_path}}')">
     <div class="w-full h-full bg-black opacity-25"></div>
 </div>
 </div>

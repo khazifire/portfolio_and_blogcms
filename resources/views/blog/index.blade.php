@@ -5,31 +5,20 @@
 
  <!--blog header -->
     <!--TODO fix the padding on the left so it can match the nav bar -->
-    <section class="bg-other  sm:pl-6 md:pl-18 lg:pl-24">
+    <section class="bg-primary  sm:pl-6 md:pl-18 lg:pl-24">
         <div class="  lg:flex">
-            <div class=" flex items-center  w-full px-6 py-8 lg:py-32 lg:h-128 lg:w-1/2">
+            <div class=" flex items-center  w-full px-6 py-8 lg:py-32 lg:h-128 lg:w-1/3">
                 <div class="max-w-xl">
-                    <span class="text-secondary font-semibold">Category</span>
-                    <h1 class="my-2 text-2xl font-semibold text-gray-800  lg:text-3xl">{{$posts[0]->title}}</h1>
-                    <span>By {{$posts[0]->user->name}} | {{date('jS M Y', strtotime($posts[0]->updated_at))}}</span> 
-                    <p class="mt-6 text-sm text-gray-500  lg:text-base">{{$posts[0]->description}}</p>
+                    <h1 class="my-2 text-2xl font-semibold text-secondary lg:text-3xl">Design Tips and Resources</h1>
+                    <p class="mt-6 text-sm text-other leading-7  lg:text-base">The blog posts will contain design tips and resoruces which will help you become a better designer</p>
                     
-                    <div class="mt-6 lg:flex-shrink-0">
-                        <a href="/blog/{{$posts[0]->slug}}" class=" inline-flex py-2 px-4 rounded-lg bg-secondary  text-primary text-md mr-4  ">
-                        Read More <span>
-                            <svg class="pl-1 h-6 w-6" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M5 12h14"></path>
-                                <path d="M12 5l7 7-7 7"></path>
-                            </svg>
-                        </span>
-                    </a>
-                    </div>
+                   
                 </div>
             </div>
             
-            <div class="w-full h-64 lg:w-1/2 lg:h-auto">
-                <div class="w-full h-full bg-cover" style="background-image: url('images/{{$posts[0]->image_path}}')">
-                    <div class="w-full h-full bg-black opacity-25"></div>
+            <div class="w-full h-64 lg:w-2/3 lg:h-auto">
+                <div class="w-full h-full bg-cover" style="background-image: url('https://images.unsplash.com/photo-1508394522741-82ac9c15ba69?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=748&q=80')">
+                  
                 </div>
             </div>
         </div>  
@@ -48,7 +37,7 @@
         
         </div>
       
-        <p class="lg:w-1/2 w-full leading-relaxed text-gray-400 text-opacity-90">Brief description of the types of content i share Lorem ipsum dolor sit amet consectetur adipisicing elit. Id inventore laboriosam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id inventore laboriosam.</p>
+        <p class="lg:w-1/2 w-full leading-relaxed text-gray-400 text-opacity-90">For the upcomming year (2022), i will write content about relating to desigsing, programming, as well as my jounrey as a student majoring in Information Technology</p>
       </div>
       <!-- =====================
            blog listing grid
@@ -62,7 +51,7 @@
                         <h3 class="tracking-widest text-secondary text-xs font-medium title-font">Design</h3>
                         <h4 class="text-lg text-white font-medium title-font mb-2 mt-2">{{$post->title}}</h4>
                         <p class="text-sm pt-2">By {{$post->user->name}} | <span>{{date('jS M Y', strtotime($post->updated_at))}}</span></p> 
-                        <p class="leading-relaxed text-base mt-2 truncate ...">{{$post->description}}</p>
+            {{--             <p class="leading-relaxed text-base mt-2 truncate ...">{{$post->description}}</p> --}}
                         
                         <div class="flex items-center flex-wrap mt-4">
                             <a href="/blog/{{$post->slug}}" class="text-secondary inline-flex items-center md:mb-2 lg:mb-0">Keep Reading
