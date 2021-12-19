@@ -27,6 +27,7 @@ for the sake of demostration, i have created a feature to allow other users to c
 
 ## Screenshots
 Register
+<br>
 <img src="./images/other/register.jpg" height="370">
 <br>
 Login
