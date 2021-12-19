@@ -7,7 +7,8 @@
 
 - Enables a user to create a post in markdown format, which is then rendered as normal Html on the frontend.
 
-- Allows users to create accounts, which can then be used to manage their posts. This being a personal project, i did not add a feature to allow users to manage their account since this will be be used by me.
+- Allows users to create accounts, which can then be used to manage their posts. This being a 
+personal project, i did not add a feature to allow users to manage their account since this will be be used by me.
 
 ```
 ## Technology Stack
