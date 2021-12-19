@@ -26,27 +26,25 @@ for the sake of demostration, i have created a feature to allow other users to c
 
 
 ## Screenshots
-- Register
-<br>
+#### Register
 <img src="./images/other/register.jpg" height="370">
 <br>
-- Login
+#### Login
 <br>
 <img src="./images/other/login.jpg" height="270">
 <br>
 
-- Blog Posts (markdown converted to html)
+#### Blog Posts (markdown converted to html)
 <br>
 <img src="./images/other/post.jpg" height="400">
 <br>
 
-- Creating/updating Blog Posts (markdown)
+#### Creating/updating Blog Posts (markdown)
 <br>
 <img src="./images/other/updating .jpg" height="350">
 <br>
 
-
-- Blog Posts (markdown converted to html)
+#### Blog Posts (markdown converted to html)
 <br>
 <img src="./images/other/post.jpg" height="400">
 
