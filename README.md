@@ -28,32 +28,29 @@ for the sake of demostration, i have created a feature to allow other users to c
 ## Screenshots
 - Register
 <br>
-<img src="./images/other/register.jpg" height="470">
-<br>
+<img src="./images/other/register.jpg" height="370">
 <br>
 - Login
 <br>
-<img src="./images/other/login.jpg" height="370">
+<img src="./images/other/login.jpg" height="270">
 <br>
-<br>
+
 - Blog Posts (markdown converted to html)
 <br>
-<img src="./images/other/post.jpg" height="500">
+<img src="./images/other/post.jpg" height="400">
 <br>
-<br>
+
 - Creating/updating Blog Posts (markdown)
 <br>
-<img src="./images/other/updating .jpg" height="450">
+<img src="./images/other/updating .jpg" height="350">
 <br>
-<br>
+
 
 - Blog Posts (markdown converted to html)
 <br>
-<img src="./images/other/post.jpg" height="500">
+<img src="./images/other/post.jpg" height="400">
 
-## screnvideo
-<video src='./images/other/home.webm' width=750 />
-<video src='./images/other/blog.webm' width=750 />
+
 
 
 
