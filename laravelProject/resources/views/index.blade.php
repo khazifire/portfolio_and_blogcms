@@ -299,6 +299,7 @@ Recent blog post
 <div class="  lg:flex">
 <div class=" flex items-center  w-full px-6 py-8 lg:py-16 lg:h-128 lg:w-1/2">
 <div class="max-w-xl">
+ @if($post)
   {{--   <span class="text-secondary font-semibold bg-mid px-2 py-1 rounded-sm">Category</span> --}}
     <h1 class="my-2 text-2xl font-semibold text-gray-800  lg:text-3xl">{{$post->title}}</h1>
     <span>By {{$post->user->name}} created on <span>{{date('jS M Y', strtotime($post->updated_at))}}</span> 
@@ -314,6 +315,7 @@ Recent blog post
         </span>
     </a>
     </div>
+  @endif
 </div>
 </div>
 
