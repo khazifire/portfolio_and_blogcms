@@ -7,19 +7,8 @@ use App\Http\Controllers;
 
 
 /*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
+instead of manually calling each route, i used the resource feature of laravel, to get all the neccessary routes include in the PostsController
 */
-
-/* Route::get('/', function () {
-    return view('welcome');
-}); */
 
 Route::get('/', [PagesController::class,'index']);
 Route::resource('/blog', PostsController::class);
