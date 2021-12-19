@@ -18,8 +18,8 @@
 - Hosting: Hostinger
 ```
 ## Demo
-for the sake of demostration, i have created a feature to allow other users to create their accounts
-- [create demo account: khazifire.com/register](https://khazifire.com/register)  (auto login after registration)
+for the sake of demonstration, i have created a feature to allow other users to create their accounts
+- [create demo account: khazifire.com/register](https://khazifire.com/register)  (auto login after registration, and upon login you will be able to see the blog post created by others, but cannot edit nor delete them)
 
 - [login: khazifire.com/login](https://khazifire.com/register)
 
