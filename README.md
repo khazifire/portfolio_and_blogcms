@@ -25,25 +25,30 @@ for the sake of demonstration, i have created a feature to allow other users to 
 
 
 ## Some Screenshots
-Register
-<br>
-<img src="./images/other/register.jpg" height="370">
-<br>
-Login
-<br>
-<img src="./images/other/login.jpg" height="270">
-<br>
+
 Blog Posts page
 <br>
 <img src="./images/other/blogsection.jpg" height="350">
+<br>
 <br>
 Blog Posts (markdown converted to html)
 <br>
 <img src="./images/other/post.jpg" height="400">
 <br>
+<br>
 Creating/updating Blog Posts (markdown)
 <br>
 <img src="./images/other/updating .jpg" height="350">
+<br>
+<br>
+Register
+<br>
+<img src="./images/other/register.jpg" height="370">
+<br>
+<br>
+Login
+<br>
+<img src="./images/other/login.jpg" height="270">
 <br>
 
 
