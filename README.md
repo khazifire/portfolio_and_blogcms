@@ -24,7 +24,7 @@ for the sake of demonstration, i have created a feature to allow other users to 
 - [login: khazifire.com/login](https://khazifire.com/register)
 
 
-## Screenshots
+## Some Screenshots
 Register
 <br>
 <img src="./images/other/register.jpg" height="370">
