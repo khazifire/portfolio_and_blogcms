@@ -33,7 +33,10 @@ Login
 <br>
 <img src="./images/other/login.jpg" height="270">
 <br>
-
+Blog Posts page
+<br>
+<img src="./images/other/blogsection.jpg" height="350">
+<br>
 Blog Posts (markdown converted to html)
 <br>
 <img src="./images/other/post.jpg" height="400">
@@ -43,9 +46,7 @@ Creating/updating Blog Posts (markdown)
 <img src="./images/other/updating .jpg" height="350">
 <br>
 
-Blog Posts (markdown converted to html)
-<br>
-<img src="./images/other/post.jpg" height="400">
+
 
 
 
